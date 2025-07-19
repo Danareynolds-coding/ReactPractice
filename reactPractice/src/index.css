@@ -1,0 +1,42 @@
+body{
+
+    background-image: url(clean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    justify-content: center;
+    display:flex;
+    margin-top: 2%;
+    width: 100%;
+}
+.row{
+    background-color: rgba(214, 82, 192, 0.628);
+
+}
+h1{ margin-top: 3%;
+    padding-top: 2%;
+    text-align:center;
+    color: darkcyan;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ol li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: darkcyan;
+}
+button{
+    background-color: darkcyan;
+    border-radius: 10%;
+    margin-left: 10px;
+    border:none;
+    padding: 0 5px;
+    font-size :small;
+    margin-bottom: 10px;
+}
+
+
+
+
