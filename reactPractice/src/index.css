@@ -9,6 +9,7 @@ body{
     display:flex;
     margin-top: 2%;
     width: 100%;
+    
 }
 .row{
     background-color: rgba(214, 82, 192, 0.628);
@@ -20,7 +21,6 @@ h1{ margin-top: 3%;
     color: darkcyan;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 ol li{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -36,6 +36,7 @@ button{
     font-size :small;
     margin-bottom: 10px;
 }
+
 
 
 

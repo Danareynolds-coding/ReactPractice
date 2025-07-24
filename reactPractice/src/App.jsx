@@ -1,13 +1,17 @@
 import './index.css'
 import './App.css'
-
-import ThingsToDo from './components/thingsToDo'
+import Header from './components/Header'
+import ThingsToDo from './components/PlanList'
+import Body from './components/Body'
 function App() {
   
   return (
    
       <div>
-       <ThingsToDo/>
+        <Header/>
+        <Body/>
+        <ThingsToDo/>
+       
       </div>
      
   )
