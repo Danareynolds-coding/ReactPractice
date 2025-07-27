@@ -50,10 +50,10 @@ function PlanList(){
             setNewPlanListComplete(false)
         }
     }
-    function handleMarkAsDone(index) {
+    function handleMarkAsComplete(index) {
         setPlanList(tasks =>
             tasks.map((task, i) =>
-                i === index ? { ...task, done: true } : task
+                i === index ? { ...task, Complete: true } : task
             )
         );
     }
@@ -111,18 +111,18 @@ function PlanList(){
             value={newPlanListComment}
             onChange={handleCommentChange}
         />
-        <ul>
+        <ul className="rowUl">
             {PlanList.map((item, index) => (
-                <li
+                <li className="col-3 decore"
                     key={item.id}
-                    style={{ textDecoration: item.complete ? 'line-through' : 'none' }}
+                    style={{ textDecoration: item.Complete ? 'line-through' : '' }}
                 >
-                    <h4>{item.chore}</h4>
+                    <h3>{item.task}</h3>
                     <p>
-                        {item.discription}{" "}--{" "}{item.deadline}
+                        {item.discription}{" "}--{" "}{item.Deadline}
                     </p>
                     <p>{item.Comment}</p>
-                    <button onClick={() => handleMarkAsDone(index)}>
+                    <button onClick={() => handleMarkAsComplete(index)}>
                         Mark as Complete
                     </button>
                     <button onClick={() => deleteTask(index)}>
