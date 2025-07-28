@@ -113,7 +113,7 @@ function PlanList(){
         />
         <ul className="rowUl">
             {PlanList.map((item, index) => (
-                <li className="col-3 decore"
+                <li className=" decore"
                     key={item.id}
                     style={{ textDecoration: item.Complete ? 'line-through' : '' }}
                 >
